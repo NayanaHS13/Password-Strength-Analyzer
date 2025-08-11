@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength Analyzer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="box">
+             <h1 class="title">Password strength analyzer</h1>
+             <p class="smalltitle">Is your password as strong as you think? Find out below!</p>
+        <div class="container">
+
+
+
+            <input type="password" id="passwordInput" placeholder="Enter your password" oninput="analyzePasswordStrength()">
+            <div id="strengthMeter">
+                <!-- the strength will be indicated here -->
+                <div id="strengthIndicator"></div>
+            </div>
+            <div id="feedback"></div>
+            <!-- here the feedback will be rendered -->
+
+            <div id="strengthMessage"></div>
+            <div id="crackTime"> </div>
+            <!-- here the strength message will be rendered -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.4.2/zxcvbn.js"></script>
+
+</body>
+</html>
