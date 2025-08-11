@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: white;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: 800px;
+    background-color: rgb(23, 93, 220);
+    border-radius: 30px;
+    padding-top: 20px; /* Add padding at the top */
+}
+
+.title {
+    color: white;
+    font-size: 90px;
+    margin-bottom: 20px;
+}
+.smalltitle{
+    color: white;
+    font-size: 30px;
+}
+.container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 40px;
+    width: 80%;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 90px;
+}
+
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#strengthMeter {
+    width: 100%;
+    height: 12px;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#strengthIndicator {
+    height: 100%;
+    width: 0;
+    background-color: red;
+    border-radius: 5px;
+    transition: width 0.3s;
+}
+
+#feedback, #strengthMessage {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+    text-align: left;
+}
+
+#strengthMessage {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #666;
+    text-align: center;
+}
+
+.strength-emoji {
+    font-size: 48px;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+}
